@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Escasez de Productos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📦 Simulador de Escasez de Productos</h1>
+        <p>Impacto de rumores sobre la disponibilidad de productos</p>
+        <h3 id="hora"></h3>
+    </header>
+
+    <nav>
+        <a href="#contexto">📋 Contexto</a>
+        <a href="#simulador">🧮 Simulador</a>
+        <a href="#resultados">📊 Resultados</a>
+        <a href="#casos">🧪 Casos</a>
+    </nav>
+
+    <main>
+
+        <section class="caja" id="contexto">
+            <h2>📋 Contexto</h2>
+            <p>
+                Cuando circulan rumores sobre una posible escasez,
+                muchas personas compran más productos de lo habitual.
+                Este simulador permite analizar si el stock disponible
+                será suficiente para cubrir la nueva demanda.
+            </p>
+        </section>
+
+        <section class="caja" id="simulador">
+            <h2>🧮 Simulador</h2>
+
+            <label>Producto</label>
+            <input type="text" id="producto">
+
+            <label>Demanda normal (unidades)</label>
+            <input type="number" id="demanda" min="1">
+
+            <label>Aumento por rumor (%)</label>
+            <input type="number" id="aumento" min="0" max="500">
+
+            <label>Stock disponible</label>
+            <input type="number" id="stock" min="1">
+
+            <button id="calcular">Calcular</button>
+            <button id="limpiar">Limpiar</button>
+        </section>
+
+        <section class="caja" id="resultados">
+            <h2>📊 Resultados</h2>
+
+            <div id="resultado"></div>
+
+            <div class="barra">
+                <div id="progreso"></div>
+            </div>
+        </section>
+
+        <section class="caja" id="casos">
+            <h2>🧪 Casos de Estudio</h2>
+
+            <button onclick="caso1()">
+                Escasez Moderada
+            </button>
+
+            <button onclick="caso2()">
+                Escasez Grave
+            </button>
+
+            <br><br>
+
+            <table>
+                <tr>
+                    <th>Demanda</th>
+                    <th>Aumento</th>
+                    <th>Stock</th>
+                    <th>Resultado</th>
+                </tr>
+
+                <tr>
+                    <td>100</td>
+                    <td>20%</td>
+                    <td>150</td>
+                    <td>Suficiente</td>
+                </tr>
+
+                <tr>
+                    <td>100</td>
+                    <td>80%</td>
+                    <td>120</td>
+                    <td>Insuficiente</td>
+                </tr>
+            </table>
+        </section>
+    
+        <section class="caja" id="creditos">
+            <h2>👨‍💻 Créditos</h2>
+
+            <p>Estudiante: David Angel Mamani Aspi</p>
+            <p>Materia: Programación Web I</p>
+            <p>Gestión: 2026</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Programación Web I - Simulador de Escasez</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
