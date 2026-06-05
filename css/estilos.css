@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    /* Degradado oscuro con matices de verde bosque apagado y verde musgo pastel */
+    background: linear-gradient(135deg, #141d17, #1b2a20, #223127);
+    color: #e1e7e4; /* Texto claro con un levísimo tinte verdoso, muy suave */
+    min-height:100vh;
+}
+
+header{
+    text-align:center;
+    padding:40px 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    padding:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color: #a7bdae; /* Verde tiza suave */
+    font-weight:bold;
+    padding:10px 15px;
+    border-radius:10px;
+    transition: background 0.3s;
+}
+
+nav a:hover{
+    background: rgba(167, 189, 174, 0.1); /* Brillo verde sutil */
+}
+
+main{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:30px 0;
+}
+
+.caja{
+    /* Cajas oscuras con un toque verde oliva/grisáceo */
+    background: rgba(27, 38, 31, 0.8); 
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    border: 1px solid rgba(167, 189, 174, 0.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.caja h2{
+    margin-bottom:15px;
+    color: #a7f3d0; /* Título en verde menta pastel brillante */
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    color: #94a79c;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border: 1px solid #2d3f34;
+    border-radius:10px;
+    background: #141d17; /* Fondo de input bien oscuro */
+    color: #f0fdf4;
+}
+
+button{
+    padding:12px 25px;
+    margin-top:20px;
+    margin-right:10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#calcular{
+    background: #6ee7b7; /* Verde menta pastel claro */
+    color: #064e3b; /* Texto verde bosque muy oscuro */
+}
+
+#limpiar{
+    background: #fca5a5; /* Rosa/Rojo pastel apagado para contrastar */
+    color: #4c0519;
+}
+
+.barra{
+    width:100%;
+    height:25px;
+    background: #223127;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:20px;
+    border: 1px solid #2d3f34;
+}
+
+#progreso{
+    width:0%;
+    height:100%;
+    background: #34d399; /* Progreso verde pastel vivo */
+    transition:0.5s;
+}
+
+.tarjeta{
+    background: rgba(255, 255, 255, 0.02);
+    padding:15px;
+    border-radius:12px;
+    margin-top:10px;
+    border: 1px solid rgba(167, 189, 174, 0.05);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th{
+    background: #84cc16; /* Verde lima pastel oscuro */
+    color: #1a2e05;
+    padding:10px;
+}
+
+td{
+    background: rgba(20, 29, 23, 0.9);
+    color: #e1e7e4;
+    padding:10px;
+    text-align:center;
+    border-bottom: 1px solid #2d3f34;
+}
+
+.exito{
+    background: rgba(52, 211, 153, 0.15); /* Alerta verde translúcida */
+    color: #6ee7b7;
+    border: 1px solid rgba(110, 231, 183, 0.3);
+    padding:15px;
+    border-radius:10px;
+}
+
+.error{
+    background: rgba(239, 68, 68, 0.15); /* Alerta roja translúcida */
+    color: #fca5a5;
+    border: 1px solid rgba(252, 165, 165, 0.3);
+    padding:15px;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color: #617568;
+}
