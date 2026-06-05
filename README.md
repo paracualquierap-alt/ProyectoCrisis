@@ -1,4 +1,4 @@
-## 📦 Simulador de Escasez de Productos
+# 📦 Simulador de Escasez de Productos
 
 > **Proyecto Final - Programación Web I** > Una herramienta interactiva de simulación económica que analiza el impacto de la especulación y los rumores en el comportamiento del consumidor y el inventario disponible.
 
